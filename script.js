@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleProgress() {
     const percent = (video.currentTime / video.duration) * 100;
-    progressBar.style.width = `${percent}%`;
+    progressBar.style.flexBasis = `${percent}%`;
   }
 
   function scrub(e) {
