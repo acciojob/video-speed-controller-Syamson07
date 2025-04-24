@@ -1,2 +1,60 @@
 
 /* Your CSS Code here. */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  max-width: 750px;
+  border: 2px solid #fff;
+  background: #000;
+}
+
+.viewer {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  background: #222;
+  color: white;
+}
+
+.player__button,
+.skip {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.player__slider {
+  margin: 0 10px;
+}
+
+.progress {
+  flex: 1;
+  height: 5px;
+  background: #555;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.progress__filled {
+  width: 0;
+  height: 100%;
+  background: #f00;
+  flex: 0;
+}
